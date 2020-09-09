@@ -9,12 +9,17 @@ public class Pessoa {
     
     
   //construtor
-    
+    public Pessoa(String nome, String sexo, int idade) {
+		this.nome = nome;
+		this.sexo = sexo;
+		this.idade = idade;
+	}
         
     
 	public String getNome() {
 		return nome;
 	}
+	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -43,6 +48,19 @@ public class Pessoa {
 		this.profissao = profissao;
 	}
 
-    // metodos de classe: andar, caminhar, trabalhar
+	
+    // metodos de classe: andar, correr, pedalar	
+	public void andar() {
+        System.out.println("Acha caminhada maravilhoso pra saúde");
+    }
+    
+    public void correr() {
+        System.out.println("Está aprendendo a correr");
+    }
+    
+    public void pedalar() {
+        System.out.println("Prefere mesmo de pedalar!");
+    }
+
 
 }
